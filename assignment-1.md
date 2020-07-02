@@ -18,7 +18,7 @@ This task seemed straightforward but the presence of the hyphen before okgoogle 
 
 
 
-<b>Problem #3 :  create a directory structure</b>
+<b>Problem #3 :  create a directory structure</b> (You are only allowed to use a single command and only one time)
 
 ![alt text](https://1.bp.blogspot.com/-x6vLWgVIU7Q/XvjlJyKJsnI/AAAAAAAAU0M/lmH8ddGkm90gXPNwUZCUvwCTN6XfJINZgCLcBGAsYHQ/s320/Screenshot%2B2020-06-29%2Bat%2B12.12.55%2BAM.png)
 
