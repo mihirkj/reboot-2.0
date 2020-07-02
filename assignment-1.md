@@ -109,3 +109,7 @@ cd /tmp
 cp -r jack.txt jack1 jack2 /home/jill
 ```
 Hence, all the files have been swapped between the users without the use of root account.
+
+![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/resources/swap-1?raw=true)
+
+![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/resources/swap-2?raw=true)
