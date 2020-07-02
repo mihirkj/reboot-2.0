@@ -93,5 +93,18 @@ Creation of jack1 and jack2 directories: `mkdir jack1 jack2`
 
 Similar steps can be taken to create the user jill and generate the required files.
 
+To move jack.txt, jack1 and jack2 (logged in as jack): `mv jack.txt jack1 jack2 /tmp/`
 
+To move jill.txt, jill1 and jill2 (logged in as jill): `mv jill.txt jill1 jill2 /tmp/`
 
+To move files of jill to jack (logged in as jack):
+```
+cd /tmp
+mv jill.txt jill1 jill2 /home/jack
+```
+To move files of jack to jill (logged in as jill):
+```
+cd /tmp
+mv jack.txt jack1 jack2 /home/jill
+```
+Hence, all the files have been swapped between the users without the use of root account.
