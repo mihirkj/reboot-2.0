@@ -6,7 +6,9 @@ For creating a directory without name I thought of naming it with a blank charac
 
 The commands used:
 
-> mkdir -v ​
+```bash
+mkdir -v ​
+```
 
 (used "-v" to see the verbose output of the operation)
 
@@ -14,8 +16,9 @@ The commands used:
 
 This task seemed straightforward but the presence of the hyphen before okgoogle caused problems. That hyphen was being regarded as the start of one of the command options for the 'mkdir' command. To tackle this double hyphens (--) can be used which signify the end of the command options and thus the beginning of the arguments. In this case the aurgument is the name of the directory to be created.
 
-> mkdir -v -- -okgoogle
-
+```bash
+mkdir -v -- -okgoogle
+```
 
 
 <b>Problem #3 :  create a directory structure</b> (You are only allowed to use a single command and only one time)
@@ -24,11 +27,11 @@ This task seemed straightforward but the presence of the hyphen before okgoogle 
 
 To create a directory structure like this the mkdir command can be used with curly braces to make muliple directories at the same location. Also, to be able to create it at once the parents tag (-p) is needed to avoid the need to first create directories at one level, and then changing the path to those directories to make directories further down. the final command looks like this:
 
-> mkdir -p A/{B/{G/K/Reboot.txt,H/J/Reboot.txt},C/{I/J/Reboot.txt,J/L/Reboot.txt},D/{F/L/Reboot.txt,E/M/Reboot.txt}}
+`mkdir -p A/{B/{G/K/Reboot.txt,H/J/Reboot.txt},C/{I/J/Reboot.txt,J/L/Reboot.txt},D/{F/L/Reboot.txt,E/M/Reboot.txt}}`
 
 Further, the tree command can be used to view the directory structure of A in a tree like format for easy visualisation.
 
-> tree A
+`tree A`
 
 It shows the following output:
 
