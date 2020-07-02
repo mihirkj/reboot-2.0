@@ -60,3 +60,15 @@ tree A
 It shows the following output:
 
 ![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/resources/tree%20output?raw=true)
+<br/>
+<br/>
+
+<b>Problem #4 : share files and folders </b>
+<ul>
+ <li>create two users name jack and Jill  from command line </li>
+ <li>create all the data under home directory of each users </li>
+ <li>login with jack user and create a file name  jack.txt using vim editor and write "hello jack" </li>
+ <li>from jack user also create two directories name jack1 & jack2 </li>
+ <li>now login from Jill user and create a file. Jill.txt using vim editor and write "hey jiil" </li>
+ <li>from Jill also create two directoires named jill1 & jill2 </li>
+</ul>
