@@ -72,3 +72,26 @@ It shows the following output:
  <li>now login from Jill user and create a file. Jill.txt using vim editor and write "hey jiil" </li>
  <li>from Jill also create two directoires named jill1 & jill2 </li>
 </ul>
+(swap these files and directories in between users  and to swap don't use root account.)
+
+<br/>
+It is required to swap the files across these two users without using the root account. To acheive this 'tmp' directory can be used which is accessible by any user and does not requires root password.
+Firstly the required files and directories can be generated under the respective accounts and then moved to the '/tmp' directory. From there those files can be copied to the required home directories. 
+<br/>
+
+Creation of the user jack: `sudo useradd jack`
+
+Setting password for user jack: `sudo passwd jack`
+
+Logging into the user jack: `su - jack`
+
+To make jack.txt using vim: `vim jack.txt`
+
+After running the above command pressed 'i' to enter Insert mode, wrote 'hello jack', then Esc -> : (semicolon) -> wq -> Enter
+
+Creation of jack1 and jack2 directories: `mkdir jack1 jack2`
+
+Similar steps can be taken to create the user jill and generate the required files.
+
+
+
