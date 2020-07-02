@@ -1,3 +1,13 @@
+<b>Problem #1 : Block System call : </b>
+ <ul>
+   <li> block system call for date command </li>
+   <li> that means you don't have to uninstall date command but if you run kernel must not accept </li>
+   <li> do the same Firefox as well </li>
+  </ul>
+
+<br/>
+<br/>
+
 <b>Problem #2 :  play with directory</b> 
 
 <b>1)</b> create a directory without name from command line
