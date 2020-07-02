@@ -101,11 +101,11 @@ To move jill.txt, jill1 and jill2 (logged in as jill): `mv jill.txt jill1 jill2 
 To move files of jill to jack (logged in as jack):
 ```
 cd /tmp
-mv jill.txt jill1 jill2 /home/jack
+cp -r jill.txt jill1 jill2 /home/jack
 ```
 To move files of jack to jill (logged in as jill):
 ```
 cd /tmp
-mv jack.txt jack1 jack2 /home/jill
+cp -r jack.txt jack1 jack2 /home/jill
 ```
 Hence, all the files have been swapped between the users without the use of root account.
