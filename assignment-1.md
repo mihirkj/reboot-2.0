@@ -75,6 +75,7 @@ It shows the following output:
 (swap these files and directories in between users  and to swap don't use root account.)
 
 <br/>
+
 It is required to swap the files across these two users without using the root account. To acheive this 'tmp' directory can be used which is accessible by any user and does not requires root password.
 Firstly the required files and directories can be generated under the respective accounts and then moved to the '/tmp' directory. From there those files can be copied to the required home directories. 
 <br/>
