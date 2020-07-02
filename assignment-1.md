@@ -25,3 +25,11 @@ Problem #3 :  create a directory structure
 To create a directory structure like this the mkdir command can be used with curly braces to make muliple directories at the same location. Also, to be able to create it at once the parents tag (-p) is needed to avoid the need to first create directories at one level, and then changing the path to those directories to make directories further down. the final command looks like this:
 
 > mkdir -p A/{B/{G/K/Reboot.txt,H/J/Reboot.txt},C/{I/J/Reboot.txt,J/L/Reboot.txt},D/{F/L/Reboot.txt,E/M/Reboot.txt}}
+
+Further, the tree command can be used to view the directory structure of A in a tree like format for easy visualisation.
+
+> tree A
+
+It shows the following output:
+
+![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/tree%20output?raw=true)
