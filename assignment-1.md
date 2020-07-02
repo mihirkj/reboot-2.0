@@ -12,6 +12,14 @@ mkdir -v ​
 
 (used "-v" to see the verbose output of the operation)
 
+TO verify this I created a new directory inside the one without name, changed the path into it and showed the present working directory:
+
+![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/resources/NoNameDir?raw=true)
+
+(Here the directory without name under the reboot directory can be seen.)
+<br/>
+<br/>
+
 <b>2)</b> create a directory with name "-okgoogle"
 
 This task seemed straightforward but the presence of the hyphen before okgoogle caused problems. That hyphen was being regarded as the start of one of the command options for the 'mkdir' command. To tackle this double hyphens (--) can be used which signify the end of the command options and thus the beginning of the arguments. In this case the aurgument is the name of the directory to be created.
@@ -19,7 +27,9 @@ This task seemed straightforward but the presence of the hyphen before okgoogle 
 ```bash
 mkdir -v -- -okgoogle
 ```
-
+![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/resources/-okgoogle%20dir?raw=true)
+<br/>
+<br/>
 
 <b>Problem #3 :  create a directory structure</b> (You are only allowed to use a single command and only one time)
 
@@ -39,4 +49,4 @@ tree A
 
 It shows the following output:
 
-![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/tree%20output?raw=true)
+![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/resources/tree%20output?raw=true)
