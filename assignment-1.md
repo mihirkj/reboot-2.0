@@ -4,6 +4,31 @@
    <li> that means you don't have to uninstall date command but if you run kernel must not accept </li>
    <li> do the same Firefox as well </li>
   </ul>
+  <br/>
+  
+In bash there is a builtin error handling function called command_not_found(). This function can be used to solve this problem. The function body can be defined inside the bashrc file in such a way to do nothing whenever 'date' or 'firefox' command is entered. The following lines need to be added to the bashrc file (the PATH to be entered as per the user's home directory):
+
+```bash
+realpath="$PATH"
+PATH="/home/mihir"
+
+command_not_found_handle() (
+  if [[ "$1" == 'date' ]] || [[ "$1" == 'firefox' ]]
+  then
+    :
+    return 1
+  else
+    PATH="$realpath" 
+    unset command_not_found_handle
+    "$@"
+  fi
+)
+```
+In the situation when either 'date' or 'firefox' command is encountered ':' will be executed, which does nothing.
+
+![alt  text](https://github.com/mihirkj/reboot-2.0/blob/master/resources/block?raw=true)
+
+Here it can be seen that 'date' and 'firefox' commands don't do anything while others work as usual.
 
 <br/>
 <br/>
