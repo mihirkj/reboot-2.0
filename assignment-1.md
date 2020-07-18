@@ -152,12 +152,16 @@ Hence, all the files have been swapped between the users without the use of root
 <br/>
 First we need to change the present working directory to the /tmp
 `cd /tmp`
+
 Creation of files:
 `touch abc.txt "ok fine" g.txt`
+
 Creation of directories:
 `mkdir aa aaa aaaa`
+
 Listing of files/directories having 2 characters in their name:
 `ls -d ??`
+
 ('?' is a wilcard for a single charcter in file globbing, and '-d' is used with the ls command to "list directories themselves, not their contents")
 <br/>
 
