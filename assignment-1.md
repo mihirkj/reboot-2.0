@@ -138,3 +138,30 @@ Hence, all the files have been swapped between the users without the use of root
 ![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/resources/swap-1?raw=true)
 
 ![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/resources/swap-2?raw=true)
+
+<br/>
+<br/>
+
+<b> Problem #5: play with files and directories </b>
+<ul>
+  <li> create  3 files named   abc.txt  ok  fine  g.txt under /tmp directory </li> 
+  <li> create  4  directories   aa aaa aaaa  under  /tmp directory </li>
+  <li> give ls command to  list the contents of  /tmp directory </li> 
+  <li> make sure it will only list the content (file|directory)  having 2 char in their name. </li>
+</ul>
+<br/>
+First we need to change the present working directory to the /tmp
+`cd /tmp`
+Creation of files:
+`touch abc.txt "ok fine" g.txt`
+Creation of directories:
+`mkdir aa aaa aaaa`
+Listing of files/directories having 2 characters in their name:
+`ls -d ??`
+('?' is a wilcard for a single charcter in file globbing, and '-d' is used with the ls command to "list directories themselves, not their contents")
+<br/>
+
+![alt text](https://github.com/mihirkj/reboot-2.0/blob/master/resources/prob5?raw=true)
+
+<br/>
+<br/>
