@@ -169,3 +169,11 @@ Listing of files/directories having 2 characters in their name:
 
 <br/>
 <br/>
+
+<b> Problem #6:  run command without any output </b>
+<ul>
+ <li> open terminal and type any command </li>
+ <li> once you press enter your output of given command must not  print </li>
+ <li> you are not allowed to redirect output anywhere </li>
+</ul>
+
